@@ -1,0 +1,20 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/goals/createGoal/route": "/api/goals/createGoal",
+  "/api/dashboard/route": "/api/dashboard",
+  "/api/goals/delete/route": "/api/goals/delete",
+  "/api/goals/update/route": "/api/goals/update",
+  "/api/login/route": "/api/login",
+  "/api/logout/route": "/api/logout",
+  "/api/productivity/weekly/route": "/api/productivity/weekly",
+  "/api/refresh/route": "/api/refresh",
+  "/api/register/route": "/api/register",
+  "/api/tasks/completed/route": "/api/tasks/completed",
+  "/api/tasks/createTask/route": "/api/tasks/createTask",
+  "/api/tasks/delete/route": "/api/tasks/delete",
+  "/api/tasks/reorder/route": "/api/tasks/reorder",
+  "/api/tasks/today/route": "/api/tasks/today",
+  "/api/tasks/update/route": "/api/tasks/update",
+  "/(auth)/page": "/",
+  "/dashboard/page": "/dashboard"
+}

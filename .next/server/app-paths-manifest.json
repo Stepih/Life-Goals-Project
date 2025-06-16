@@ -1,0 +1,20 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/goals/createGoal/route": "app/api/goals/createGoal/route.js",
+  "/api/dashboard/route": "app/api/dashboard/route.js",
+  "/api/goals/delete/route": "app/api/goals/delete/route.js",
+  "/api/goals/update/route": "app/api/goals/update/route.js",
+  "/api/login/route": "app/api/login/route.js",
+  "/api/logout/route": "app/api/logout/route.js",
+  "/api/productivity/weekly/route": "app/api/productivity/weekly/route.js",
+  "/api/refresh/route": "app/api/refresh/route.js",
+  "/api/register/route": "app/api/register/route.js",
+  "/api/tasks/completed/route": "app/api/tasks/completed/route.js",
+  "/api/tasks/createTask/route": "app/api/tasks/createTask/route.js",
+  "/api/tasks/delete/route": "app/api/tasks/delete/route.js",
+  "/api/tasks/reorder/route": "app/api/tasks/reorder/route.js",
+  "/api/tasks/today/route": "app/api/tasks/today/route.js",
+  "/api/tasks/update/route": "app/api/tasks/update/route.js",
+  "/(auth)/page": "app/(auth)/page.js",
+  "/dashboard/page": "app/dashboard/page.js"
+}
