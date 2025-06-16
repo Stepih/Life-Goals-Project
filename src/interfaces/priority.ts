@@ -1,0 +1,1 @@
+export type TypePriority = 'min' | 'mid' | 'max'

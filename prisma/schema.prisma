@@ -1,0 +1,62 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Priority {
+  min
+  mid
+  max
+}
+
+model User {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  password     String
+  refreshToken String?  
+  createdAt    DateTime @default(now())
+
+  // Связи
+  goals Goal[]
+  tasks Task[]
+}
+
+model Goal {
+  id          String   @id @default(uuid())
+  title       String
+  description String?
+  achieved    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  priority Priority @default(min)
+
+  // Связь с пользователем
+  userId String
+  user   User     @relation(fields: [userId], references: [id])
+
+  // Связь с задачами
+  tasks  Task[]
+}
+
+model Task {
+  id          String   @id @default(uuid())
+  title       String
+  description String?
+  completed   Boolean  @default(false)
+  completedAt   DateTime? 
+  createdAt   DateTime @default(now())
+  scheduledFor DateTime?
+  priority Priority @default(min)
+  order Int
+
+  // Связь с пользователем
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  // Связь с целью
+  goalId String?
+  goal   Goal?  @relation(fields: [goalId], references: [id])
+}
